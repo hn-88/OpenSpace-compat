@@ -181,7 +181,21 @@ After building OpenSpace, you can verify both paths:
 ./bin/OpenSpace
 
 # 2. FP64 Emulated Float Path
-NO_GPU_DOUBLE=1 ./bin/OpenSpace
+```
+On Linux and Mac,
+```
+export NO_GPU_DOUBLE=1 
+./bin/OpenSpace
+```
+On Windows Powershell,
+```
+$env.NO_GPU_DOUBLE=1
+bin/OpenSpace
+```
+On Windows `cmd`,
+```
+set NO_GPU_DOUBLE=1
+bin/OpenSpace
 ```
 
 Check the log or console output:
